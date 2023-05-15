@@ -2,6 +2,8 @@
 
 Deploy Node-RED  on Railway.
 
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/56bdr8?referralCode=2_sIT9)
+
 ## ✨ Features
 
 * Node-RED accessible on HTTPS
