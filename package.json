@@ -1,0 +1,17 @@
+{
+    "name": "@vergissberlin/railwayapp-nodered",
+    "version": "0.1.0",
+    "description": "Node-RED package for railway",
+    "main": "index.js",
+    "scripts": {
+        "start": "node-red -u .",
+        "start:dev": "NODE_RED_USERNAME=test NODE_RED_PASSWORD=test node-red --userDir .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "node-red": "~3.x.x",
+        "node-red-contrib-ngrok": "latest",
+        "node-red-dashboard": "~3.x.x",
+        "when": "^3.7.8"
+    }
+}
