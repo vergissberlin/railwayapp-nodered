@@ -23,3 +23,7 @@ NODE_RED_DASHBOARD_URI="/ui" # optional
 
 2. Wait for Build & Deployment to Finish
 3 Login with credentials
+
+## 🪲 Bug Reporting
+
+If you find a bug in TYPO3 template for reailway, you can [submit an issue](https://github.com/vergissberlin/railwayapp-nodered/issues/new) to the GitHub Repository. Even better you can submit a Pull Request with a fix.
