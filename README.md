@@ -1,6 +1,6 @@
 # Node-RED
 
-Deploy Node-RED  on Railway.
+Deploy Node-RED  on Railway with one click.
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/56bdr8?referralCode=2_sIT9)
 
@@ -26,4 +26,4 @@ NODE_RED_DASHBOARD_URI="/ui" # optional
 
 ## 🪲 Bug Reporting
 
-If you find a bug in TYPO3 template for reailway, you can [submit an issue](https://github.com/vergissberlin/railwayapp-nodered/issues/new) to the GitHub Repository. Even better you can submit a Pull Request with a fix.
+If you find a bug in the template for railway, you can [submit an issue](https://github.com/vergissberlin/railwayapp-nodered/issues/new) to the GitHub Repository. Even better you can submit a Pull Request with a fix.
