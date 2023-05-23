@@ -1,6 +1,6 @@
 {
     "name": "@vergissberlin/railwayapp-nodered",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Node-RED package for railway",
     "main": "index.js",
     "scripts": {
