@@ -40,7 +40,7 @@ Danke fuer deinen Beitrag zu diesem Railway Node-RED Template.
   - Was wurde geaendert?
   - Warum war die Aenderung noetig?
   - Wie kann man die Aenderung testen?
-- Nutze fuer Releases bevorzugt Conventional Commits (`feat:`, `fix:`, `chore:`), da `release-please` darauf basiert.
+- Nutze fuer Releases Conventional Commits. In diesem Repo loesen `feat:`, `fix:`, `refactor:`, `docs:`, `ci:` und `chore:` einen Release-Bump aus.
 
 ## Manuelle Checks vor PR
 - App startet lokal (`npm run start:dev`).
