@@ -1,6 +1,6 @@
 {
     "name": "@vergissberlin/railwayapp-nodered",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "Node-RED package for railway",
     "main": "index.js",
     "scripts": {
@@ -10,7 +10,7 @@
     },
     "dependencies": {
         "@flowfuse/node-red-dashboard": "^1.30.2",
-        "bcryptjs": "^2.4.3",
+        "bcryptjs": "^3.0.0",
         "node-red": "^4.1.7",
         "node-red-contrib-ngrok": "latest",
         "when": "^3.7.8"
