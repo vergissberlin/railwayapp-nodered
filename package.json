@@ -9,10 +9,10 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
+        "@flowfuse/node-red-dashboard": "^1.30.2",
         "bcryptjs": "^3.0.0",
         "node-red": "^4.1.7",
         "node-red-contrib-ngrok": "latest",
-        "node-red-dashboard": "~3.x.x",
         "when": "^3.7.8"
     }
 }
