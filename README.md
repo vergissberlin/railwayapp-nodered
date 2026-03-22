@@ -8,6 +8,7 @@ Deploy Node-RED on Railway with one click.
 
 * Node-RED accessible on HTTPS
 * Password Authentication (Set username & password in environment variables)
+* FlowFuse Dashboard via `@flowfuse/node-red-dashboard`
 * Railway config as code via `railway.toml`
 
 ## Production recommendations (Railway)
@@ -27,7 +28,7 @@ NODE_RED_PASSWORD=yourpassword
 # optional alternative to NODE_RED_PASSWORD (bcrypt hash)
 NODE_RED_PASSWORD_HASH=$2a$10$...
 NODE_RED_EDITOR_URI="/" # optional
-NODE_RED_DASHBOARD_URI="/ui" # optional
+NODE_RED_DASHBOARD_URI="/ui" # optional FlowFuse dashboard path
 ```
 
 2. Wait for Build & Deployment to Finish

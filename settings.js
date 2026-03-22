@@ -172,7 +172,7 @@ module.exports = {
     //requireHttps: true,
 
     /** To password protect the node-defined HTTP endpoints (httpNodeRoot),
-     * including node-red-dashboard, or the static content (httpStatic), the
+     * including dashboards and static content (httpStatic), the
      * following properties can be used.
      * The `pass` field is a bcrypt hash of the password.
      * See http://nodered.org/docs/security.html#generating-the-password-hash
@@ -526,7 +526,7 @@ module.exports = {
      */
     //nodeMessageBufferMaxLength: 0,
 
-    /** If you installed the optional node-red-dashboard you can set it's path
+    /** If you installed an optional dashboard package you can set its path
      * relative to httpNodeRoot
      * Other optional properties include
      *  readOnly:{boolean},
