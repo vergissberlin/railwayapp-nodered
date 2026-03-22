@@ -1,0 +1,7 @@
+# Default owner for all files
+* @vergissberlin
+
+# Optional: keep docs ownership explicit
+README.md @vergissberlin
+CONTRIBUTING.md @vergissberlin
+agent.md @vergissberlin

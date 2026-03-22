@@ -1,10 +1,16 @@
 /*
 
 !/.env
+!/.github/
+!/.github/**
 !/.gitignore
+!/agent.md
+!/CONTRIBUTING.md
+!/.release-please-manifest.json
 !/flows.json
 !/LICENSE
 !/package.json
 !/package-lock.json
 !/README.md
+!/release-please-config.json
 !/settings.js
