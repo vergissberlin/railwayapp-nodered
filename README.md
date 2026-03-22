@@ -17,6 +17,8 @@ Deploy Node-RED  on Railway with one click.
 NODE_RED_CREDENTIAL_SECRET=yoursecret
 NODE_RED_USERNAME=yourusername
 NODE_RED_PASSWORD=yourpassword
+# optional alternative to NODE_RED_PASSWORD (bcrypt hash)
+NODE_RED_PASSWORD_HASH=$2a$10$...
 NODE_RED_EDITOR_URI="/" # optional
 NODE_RED_DASHBOARD_URI="/ui" # optional
 ```

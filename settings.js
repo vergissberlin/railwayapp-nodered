@@ -21,6 +21,25 @@
  **/
 
 var when = require("when")
+var bcrypt = require("bcryptjs")
+
+function normalizeAdminRoot(value) {
+    if (!value || value === "/") {
+        return "/"
+    }
+    var trimmed = value.trim()
+    if (!trimmed) {
+        return "/"
+    }
+    return trimmed.startsWith("/") ? trimmed : "/" + trimmed
+}
+
+function normalizeDashboardPath(value) {
+    if (!value) {
+        return "ui"
+    }
+    return value.replace(/^\/+/, "") || "ui"
+}
 
 module.exports = {
 
@@ -93,8 +112,25 @@ module.exports = {
             }
         },
         authenticate: function (username, password) {
-            if (process.env.NODE_RED_USERNAME == username &&
-                process.env.NODE_RED_PASSWORD == password) {
+            if (process.env.NODE_RED_USERNAME != username) {
+                return when.resolve(null)
+            }
+
+            var plainPassword = process.env.NODE_RED_PASSWORD
+            var passwordHash = process.env.NODE_RED_PASSWORD_HASH
+            var isPasswordValid = false
+
+            if (passwordHash) {
+                try {
+                    isPasswordValid = bcrypt.compareSync(password, passwordHash)
+                } catch (error) {
+                    isPasswordValid = false
+                }
+            } else {
+                isPasswordValid = plainPassword == password
+            }
+
+            if (isPasswordValid) {
                 return when.resolve({username: username, permissions: "*"})
             } else {
                 return when.resolve(null)
@@ -184,7 +220,7 @@ module.exports = {
      * The following property can be used to specify a different root path.
      * If set to false, this is disabled.
      */
-    httpAdminRoot: process.env.NODE_RED_EDITOR_URI || "/",
+    httpAdminRoot: normalizeAdminRoot(process.env.NODE_RED_EDITOR_URI),
 
     /** The following property can be used to add a custom middleware function
      * in front of all admin http routes. For example, to set custom http
@@ -498,7 +534,7 @@ module.exports = {
      *  ioMiddleware:{function or array}, (socket,next) - socket.io middleware
      */
     //ui: { path: "ui" },
-    ui: {path: process.env.NODE_RED_DASHBOARD_URI || "ui"},
+    ui: {path: normalizeDashboardPath(process.env.NODE_RED_DASHBOARD_URI)},
 
     /** Colourise the console output of the debug node */
     //debugUseColors: true,

@@ -9,6 +9,7 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
+        "bcryptjs": "^2.4.3",
         "node-red": "~3.x.x",
         "node-red-contrib-ngrok": "latest",
         "node-red-dashboard": "~3.x.x",
