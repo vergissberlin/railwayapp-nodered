@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.2](https://github.com/vergissberlin/railwayapp-nodered/compare/railwayapp-nodered-v0.2.1...railwayapp-nodered-v0.2.2) (2026-03-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency bcryptjs to v3 ([#4](https://github.com/vergissberlin/railwayapp-nodered/issues/4)) ([b735125](https://github.com/vergissberlin/railwayapp-nodered/commit/b735125f815641175781f392039a1af1747d370f))
+
+
+### Chores
+
+* migrate dashboard dependency to FlowFuse ([#7](https://github.com/vergissberlin/railwayapp-nodered/issues/7)) ([03c5a4e](https://github.com/vergissberlin/railwayapp-nodered/commit/03c5a4e328922e49c368ebe8798efbc3cfe46d68))
+
 ## [0.2.1](https://github.com/vergissberlin/railwayapp-nodered/compare/railwayapp-nodered-v0.2.0...railwayapp-nodered-v0.2.1) (2026-03-22)
 
 
