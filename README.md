@@ -14,7 +14,7 @@ Deploy Node-RED on Railway with one click.
 ## Production recommendations (Railway)
 
 * Keep credentials in Railway Variables, never in `.env` committed to Git
-* Use a healthcheck path (configured in `railway.toml`)
+* Use the built-in healthcheck endpoint at `/healthz` (configured in `railway.toml`)
 * Use a persistent volume for Node-RED data in production
 
 ## 🚀 How to Deploy
@@ -38,7 +38,7 @@ NODE_RED_DASHBOARD_URI="/ui" # optional FlowFuse dashboard path
 
 Node-RED stores flows and runtime state in the user directory. For production use, attach a Railway volume and mount it to `/data`.
 
-Then set the service start command in Railway to:
+The template uses this start command by default:
 
 ```bash
 node-red -u /data --settings /app/settings.js
