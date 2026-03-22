@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3](https://github.com/vergissberlin/railwayapp-nodered/compare/railwayapp-nodered-v0.2.2...railwayapp-nodered-v0.2.3) (2026-03-22)
+
+
+### Chores
+
+* harden railway runtime defaults ([#8](https://github.com/vergissberlin/railwayapp-nodered/issues/8)) ([5db665e](https://github.com/vergissberlin/railwayapp-nodered/commit/5db665ef8eddc9f24874e8977deab01a28b8d37f))
+
 ## [0.2.2](https://github.com/vergissberlin/railwayapp-nodered/compare/railwayapp-nodered-v0.2.1...railwayapp-nodered-v0.2.2) (2026-03-22)
 
 
