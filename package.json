@@ -10,7 +10,7 @@
     },
     "dependencies": {
         "bcryptjs": "^2.4.3",
-        "node-red": "~3.x.x",
+        "node-red": "~4.1.0",
         "node-red-contrib-ngrok": "latest",
         "node-red-dashboard": "~3.x.x",
         "when": "^3.7.8"
