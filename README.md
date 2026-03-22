@@ -1,6 +1,6 @@
 # Node-RED
 
-Deploy Node-RED  on Railway with one click.
+Deploy Node-RED on Railway with one click.
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/56bdr8?referralCode=2_sIT9)
 
@@ -8,6 +8,13 @@ Deploy Node-RED  on Railway with one click.
 
 * Node-RED accessible on HTTPS
 * Password Authentication (Set username & password in environment variables)
+* Railway config as code via `railway.toml`
+
+## Production recommendations (Railway)
+
+* Keep credentials in Railway Variables, never in `.env` committed to Git
+* Use a healthcheck path (configured in `railway.toml`)
+* Use a persistent volume for Node-RED data in production
 
 ## 🚀 How to Deploy
 
@@ -24,7 +31,19 @@ NODE_RED_DASHBOARD_URI="/ui" # optional
 ```
 
 2. Wait for Build & Deployment to Finish
-3 Login with credentials
+3. Login with credentials
+
+## Persistent storage (recommended)
+
+Node-RED stores flows and runtime state in the user directory. For production use, attach a Railway volume and mount it to `/data`.
+
+Then set the service start command in Railway to:
+
+```bash
+node-red -u /data --settings /app/settings.js
+```
+
+This keeps your flows and credentials persistent across redeployments.
 
 ## 🪲 Bug Reporting
 

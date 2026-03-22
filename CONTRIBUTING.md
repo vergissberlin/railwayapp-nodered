@@ -40,7 +40,7 @@ Danke fuer deinen Beitrag zu diesem Railway Node-RED Template.
   - Was wurde geaendert?
   - Warum war die Aenderung noetig?
   - Wie kann man die Aenderung testen?
-- Nutze klare, praezise Commit-Messages.
+- Nutze fuer Releases bevorzugt Conventional Commits (`feat:`, `fix:`, `chore:`), da `release-please` darauf basiert.
 
 ## Manuelle Checks vor PR
 - App startet lokal (`npm run start:dev`).
