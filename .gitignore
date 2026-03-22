@@ -1,9 +1,9 @@
 /*
 
-!/.env
 !/.github/
 !/.github/**
 !/.gitignore
+!/.env.example
 !/agent.md
 !/CONTRIBUTING.md
 !/.release-please-manifest.json
@@ -12,5 +12,6 @@
 !/package.json
 !/package-lock.json
 !/README.md
+!/railway.toml
 !/release-please-config.json
 !/settings.js
