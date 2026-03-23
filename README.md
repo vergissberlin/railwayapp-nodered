@@ -49,3 +49,6 @@ This keeps your flows and credentials persistent across redeployments.
 ## 🪲 Bug Reporting
 
 If you find a bug in the template for railway, you can [submit an issue](https://github.com/vergissberlin/railwayapp-nodered/issues/new) to the GitHub Repository. Even better you can submit a Pull Request with a fix.
+
+<!-- footer -->
+[![Node-RED](https://img.shields.io/badge/Node-RED-8F0000?style=for-the-badge&logo=nodered&logoColor=white)](https://github.com/vergissberlin/railwayapp-nodered)
