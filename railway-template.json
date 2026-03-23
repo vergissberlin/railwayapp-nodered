@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/vergissberlin/railway/main/docs/railway-template.schema.json",
+  "schemaVersion": 1,
+  "project": "railwayapp-nodered",
+  "repo": "vergissberlin/railwayapp-nodered",
+  "displayName": "Node-RED",
+  "publishedCode": "node-red",
+  "image": "https://raw.githubusercontent.com/vergissberlin/railwayapp-nodered/main/template-header.svg",
+  "description": "Deploy Node-RED flows on Railway with HTTPS and dashboard integrations.",
+  "workspaceAutomation": false
+}
