@@ -1,5 +1,8 @@
 # Node-RED
 
+![Template Header](./template-header.svg)
+
+
 Deploy Node-RED on Railway with one click.
 
 [![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/56bdr8?referralCode=2_sIT9&utm_medium=integration&utm_source=template&utm_campaign=generic)
