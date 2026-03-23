@@ -2,8 +2,8 @@
 builder = "RAILPACK"
 
 [deploy]
-startCommand = "node-red -u /data --settings /app/settings.js"
-healthcheckPath = "/healthz"
+startCommand = "node-red -u /data --settings /app/settings.js -p ${PORT:-1880}"
+healthcheckPath = "/"
 healthcheckTimeout = 300
 restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10
