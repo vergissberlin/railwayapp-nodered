@@ -19,6 +19,7 @@ Deploy Node-RED on Railway with one click.
 * Keep credentials in Railway Variables, never in `.env` committed to Git
 * Use the built-in healthcheck endpoint at `/healthz` (configured in `railway.toml`)
 * Use a persistent volume for Node-RED data in production
+* The `/data` mount is enforced via `requiredMountPath` in `railway.toml`
 
 ## 🚀 How to Deploy
 
