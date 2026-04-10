@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.2.4](https://github.com/vergissberlin/railwayapp-nodered/compare/railwayapp-nodered-v0.2.3...railwayapp-nodered-v0.2.4) (2026-04-10)
+
+
+### Features
+
+* add railway-template.json metadata ([5e8afc8](https://github.com/vergissberlin/railwayapp-nodered/commit/5e8afc80b3827dc1ae2670df050ac5bbc12f6aa9))
+
+
+### Bug Fixes
+
+* enforce persistent volume guidance for Railway deploys ([0574c8c](https://github.com/vergissberlin/railwayapp-nodered/commit/0574c8c5aeafc32f4c423abe0531bcf48e48a0cf))
+
+
+### Documentation
+
+* sync template header and cross-repo footer badges ([493673b](https://github.com/vergissberlin/railwayapp-nodered/commit/493673b5bb341b2facf74694b5b26d90a26e5925))
+* sync template header and cross-repo footer badges ([ee6b19b](https://github.com/vergissberlin/railwayapp-nodered/commit/ee6b19b5ecf4f24a67f61c212298130e7384d537))
+* update footer section in README.md with new badge formatting ([6fa6460](https://github.com/vergissberlin/railwayapp-nodered/commit/6fa6460507496f158a4b2dfb4fff671c6ebd1cae))
+
 ## [0.2.3](https://github.com/vergissberlin/railwayapp-nodered/compare/railwayapp-nodered-v0.2.2...railwayapp-nodered-v0.2.3) (2026-03-22)
 
 
