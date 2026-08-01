@@ -3,9 +3,9 @@
 ![Template Header](./template-header.svg)
 
 
-Deploy Node-RED on Railway with one click.
+Deploy Node-RED on Railway with one click. Node-RED is a flow-based low-code programming tool for wiring together hardware devices, APIs, and online services as part of the Internet of Things. This template runs it behind HTTPS with password authentication, a FlowFuse dashboard, and Railway config as code, so you can start building automations in minutes.
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/56bdr8?referralCode=2_sIT9)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/template/56bdr8?referralCode=2_sIT9)
 
 ## ✨ Features
 
