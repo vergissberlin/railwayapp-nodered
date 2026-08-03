@@ -1,5 +1,32 @@
 # Changelog
 
+## [0.2.4](https://github.com/vergissberlin/railwayapp-nodered/compare/railwayapp-nodered-v0.2.3...railwayapp-nodered-v0.2.4) (2026-08-01)
+
+
+### Features
+
+* add railway-template.json metadata ([5e8afc8](https://github.com/vergissberlin/railwayapp-nodered/commit/5e8afc80b3827dc1ae2670df050ac5bbc12f6aa9))
+
+
+### Bug Fixes
+
+* clarify secret handling in .env.example, fix Railway button domain, expand README intro ([#26](https://github.com/vergissberlin/railwayapp-nodered/issues/26)) ([7178392](https://github.com/vergissberlin/railwayapp-nodered/commit/7178392334c08c148e41b282a7b29b56dd51e5f0))
+* enforce persistent volume guidance for Railway deploys ([0574c8c](https://github.com/vergissberlin/railwayapp-nodered/commit/0574c8c5aeafc32f4c423abe0531bcf48e48a0cf))
+* remove duplicated footer marker and resync badge footer ([#24](https://github.com/vergissberlin/railwayapp-nodered/issues/24)) ([d4cf618](https://github.com/vergissberlin/railwayapp-nodered/commit/d4cf618df66969e856a404661f7ba79527200ea6))
+
+
+### Documentation
+
+* rename agent.md to AGENTS.md, add conventional commits rule ([#25](https://github.com/vergissberlin/railwayapp-nodered/issues/25)) ([284afce](https://github.com/vergissberlin/railwayapp-nodered/commit/284afce69935b8c1138c7611de76b55d72219167))
+* sync template header and cross-repo footer badges ([493673b](https://github.com/vergissberlin/railwayapp-nodered/commit/493673b5bb341b2facf74694b5b26d90a26e5925))
+* sync template header and cross-repo footer badges ([ee6b19b](https://github.com/vergissberlin/railwayapp-nodered/commit/ee6b19b5ecf4f24a67f61c212298130e7384d537))
+* update footer section in README.md with new badge formatting ([6fa6460](https://github.com/vergissberlin/railwayapp-nodered/commit/6fa6460507496f158a4b2dfb4fff671c6ebd1cae))
+
+
+### Chores
+
+* **deps:** update dependency node-red to v4.1.11 ([#11](https://github.com/vergissberlin/railwayapp-nodered/issues/11)) ([3c5c8a8](https://github.com/vergissberlin/railwayapp-nodered/commit/3c5c8a88255cd3a7a83261876fe16609c1ee53cc))
+
 ## [0.2.3](https://github.com/vergissberlin/railwayapp-nodered/compare/railwayapp-nodered-v0.2.2...railwayapp-nodered-v0.2.3) (2026-03-22)
 
 
