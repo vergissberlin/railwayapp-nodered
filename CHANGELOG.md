@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.5](https://github.com/vergissberlin/railwayapp-nodered/compare/railwayapp-nodered-v0.2.4...railwayapp-nodered-v0.2.5) (2026-08-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency node-red to v5 ([#13](https://github.com/vergissberlin/railwayapp-nodered/issues/13)) ([c146e50](https://github.com/vergissberlin/railwayapp-nodered/commit/c146e5051f8abccfb4dda11e507b643c69a6a2c7))
+
+
+### Chores
+
+* **deps:** bump the npm_and_yarn group across 1 directory with 3 updates ([#28](https://github.com/vergissberlin/railwayapp-nodered/issues/28)) ([ab72505](https://github.com/vergissberlin/railwayapp-nodered/commit/ab725052ca50094aee8fab6650affb203c445d02))
+
 ## [0.2.4](https://github.com/vergissberlin/railwayapp-nodered/compare/railwayapp-nodered-v0.2.3...railwayapp-nodered-v0.2.4) (2026-08-01)
 
 
