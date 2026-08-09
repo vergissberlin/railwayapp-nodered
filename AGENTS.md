@@ -41,6 +41,9 @@
 - Das Projekt ist als Deployment-Template vorbereitet.
 - Es existieren noch keine konkreten Flows oder automatisierte Tests.
 
+## Commit-Konvention
+- Commits folgen Conventional Commits auf Englisch (`feat:`, `fix:`, `docs:`, `chore:` usw.).
+
 ## Arbeitskonvention fuer Agents
 - Bei Funktionsaenderungen zuerst `settings.js` und `README.md` auf Konsistenz pruefen.
 - Neue Features moeglichst ueber Umgebungsvariablen steuerbar machen.
