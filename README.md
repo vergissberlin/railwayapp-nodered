@@ -14,6 +14,15 @@ Deploy Node-RED on Railway with one click. Node-RED is a flow-based low-code pro
 * FlowFuse Dashboard via `@flowfuse/node-red-dashboard`
 * Railway config as code via `railway.toml`
 
+## 🏗️ Architecture
+
+```mermaid
+flowchart LR
+    Client(["🌐 Client"]) -->|HTTPS| Domain["Railway Public Domain"]
+    Domain -->|"$PORT"| App["Container (Railpack build)\nnode-red -u /data"]
+    App --> Volume[("Volume\n/data")]
+```
+
 ## Production recommendations (Railway)
 
 * Keep credentials in Railway Variables, never in `.env` committed to Git
