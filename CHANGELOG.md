@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.2.6](https://github.com/vergissberlin/railwayapp-nodered/compare/railwayapp-nodered-v0.2.5...railwayapp-nodered-v0.2.6) (2026-08-20)
+
+
+### Documentation
+
+* add architecture diagram to README ([#31](https://github.com/vergissberlin/railwayapp-nodered/issues/31)) ([fa8ed21](https://github.com/vergissberlin/railwayapp-nodered/commit/fa8ed215f531266b3b0fe8d71ae20f10c50e6cfe))
+* refresh shared template footer badges ([756daf6](https://github.com/vergissberlin/railwayapp-nodered/commit/756daf6e8ce45a3b844070c82717aeb795dff94b))
+
+
+### Chores
+
+* **deps:** bump node-red to v5 ([#14](https://github.com/vergissberlin/railwayapp-nodered/issues/14)) ([effeed7](https://github.com/vergissberlin/railwayapp-nodered/commit/effeed7dfeb532d37bd383ba4e304446c817b86f))
+* update shared template footer ([951344e](https://github.com/vergissberlin/railwayapp-nodered/commit/951344e735278f34418e6facf3f5f38f8fe7adc3))
+* update shared template footer ([48b9e8f](https://github.com/vergissberlin/railwayapp-nodered/commit/48b9e8f6bf9c9ed144e294d608df49a84b81b8f8))
+
 ## [0.2.5](https://github.com/vergissberlin/railwayapp-nodered/compare/railwayapp-nodered-v0.2.4...railwayapp-nodered-v0.2.5) (2026-08-03)
 
 
