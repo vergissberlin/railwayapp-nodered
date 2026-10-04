@@ -23,6 +23,15 @@
 var when = require("when")
 var bcrypt = require("bcryptjs")
 
+// Liveness endpoint used by railway.toml (healthcheckPath = "/healthz")
+function healthzMiddleware(req, res, next) {
+    if (req.method === "GET" && req.path === "/healthz") {
+        res.status(200).json({status: "ok"})
+        return
+    }
+    next()
+}
+
 function normalizeAdminRoot(value) {
     if (!value || value === "/") {
         return "/"
@@ -264,13 +273,13 @@ module.exports = {
      * applied to all http in nodes, or any other sort of common request processing.
      * It can be a single function or an array of middleware functions.
      */
-    httpNodeMiddleware: function(req, res, next) {
-        if (req.method === "GET" && req.path === "/healthz") {
-            res.status(200).json({status: "ok"})
-            return
-        }
-        next()
-    },
+    httpNodeMiddleware: healthzMiddleware,
+
+    /** httpNodeMiddleware only covers http-in nodes, not the editor/admin app that
+     * serves the root path. Railway's healthcheck hits /healthz on that app, so it
+     * needs the same handler (runs before adminAuth, no credentials required).
+     */
+    httpAdminMiddleware: healthzMiddleware,
 
     /** When httpAdminRoot is used to move the UI to a different root path, the
      * following property can be used to identify a directory of static content

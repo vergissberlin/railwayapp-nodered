@@ -26,7 +26,7 @@ flowchart LR
 ## Production recommendations (Railway)
 
 * Keep credentials in Railway Variables, never in `.env` committed to Git
-* Use the built-in healthcheck endpoint at `/healthz` (configured in `railway.toml`)
+* Use the built-in healthcheck endpoint at `/healthz` (configured in `railway.toml`; served on the editor root, so keep `NODE_RED_EDITOR_URI` at `/`)
 * Use a persistent volume for Node-RED data in production
 * The `/data` mount is enforced via `requiredMountPath` in `railway.toml`
 
