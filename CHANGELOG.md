@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.8](https://github.com/vergissberlin/railwayapp-nodered/compare/railwayapp-nodered-v0.2.7...railwayapp-nodered-v0.2.8) (2026-10-28)
+
+
+### Bug Fixes
+
+* **deps:** update node-red to 5.0.9 and dashboard to 1.34.1, resolve critical audit findings ([d7e7c4a](https://github.com/vergissberlin/railwayapp-nodered/commit/d7e7c4a2440bb47dd6afdbd9a91dbc812fa3697c))
+* persist flows in the /data volume instead of the container filesystem ([6760227](https://github.com/vergissberlin/railwayapp-nodered/commit/67602278f7de67e6520df4bbb18b90b56621e5ea))
+
 ## [0.2.7](https://github.com/vergissberlin/railwayapp-nodered/compare/railwayapp-nodered-v0.2.6...railwayapp-nodered-v0.2.7) (2026-10-28)
 
 
