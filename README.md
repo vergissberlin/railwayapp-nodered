@@ -59,6 +59,12 @@ node-red -u /data --settings /app/settings.js
 
 This keeps your flows and credentials persistent across redeployments.
 
+Flows are always written to `/data/flows.json` (credentials to `/data/flows_cred.json`). If the volume does not contain a flows file yet, the bundled default `flows.json` is copied once; existing files in `/data` are never overwritten. You can override the location with `NODE_RED_DATA_DIR` or `NODE_RED_FLOW_FILE`.
+
+> **Upgrading from 0.2.7 or older:** earlier versions stored flows in the container filesystem (`/app/flows.json`) instead of the volume, so they did not survive a redeploy. Before updating an existing deployment, export your flows in the editor (Menu → Export → All flows) and import them again after the update.
+
+Keep `NODE_RED_CREDENTIAL_SECRET` stable. Changing it makes previously stored node credentials unreadable. The warning `Encrypted credentials not found` on a fresh start only means that no credentials have been saved yet.
+
 ## 🪲 Bug Reporting
 
 If you find a bug in the template for railway, you can [submit an issue](https://github.com/vergissberlin/railwayapp-nodered/issues/new) to the GitHub Repository. Even better you can submit a Pull Request with a fix.

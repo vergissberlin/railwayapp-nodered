@@ -22,6 +22,56 @@
 
 var when = require("when")
 var bcrypt = require("bcryptjs")
+var fs = require("fs")
+var path = require("path")
+
+/**
+ * Keep flows (and their credentials) inside the persistent Railway volume.
+ *
+ * Node-RED resolves a relative `flowFile` against the current working directory
+ * first when a file with that name exists there. Because the repository ships a
+ * default `flows.json` in /app, flows ended up in the ephemeral container
+ * filesystem and were lost on every redeploy. We therefore use an absolute path
+ * inside the data directory (default: /data, override with NODE_RED_DATA_DIR or
+ * NODE_RED_FLOW_FILE).
+ *
+ * Migration is non-destructive: if the volume has no flows file yet, the bundled
+ * flows.json (and flows_cred.json, if present) is copied once. Existing files in
+ * the volume are never overwritten.
+ */
+function isWritableDir(dir) {
+    try {
+        return fs.statSync(dir).isDirectory() && (fs.accessSync(dir, fs.constants.W_OK), true)
+    } catch (error) {
+        return false
+    }
+}
+
+function copyIfMissing(source, target) {
+    try {
+        if (fs.existsSync(source) && !fs.existsSync(target)) {
+            fs.copyFileSync(source, target, fs.constants.COPYFILE_EXCL)
+            console.log("[railway] Copied " + source + " to " + target)
+        }
+    } catch (error) {
+        console.warn("[railway] Could not copy " + source + " to " + target + ": " + error.message)
+    }
+}
+
+function resolveFlowFile() {
+    if (process.env.NODE_RED_FLOW_FILE) {
+        return process.env.NODE_RED_FLOW_FILE
+    }
+    var dataDir = process.env.NODE_RED_DATA_DIR || "/data"
+    if (!isWritableDir(dataDir)) {
+        // Local development without a volume: keep the previous behaviour.
+        return "flows.json"
+    }
+    var target = path.join(dataDir, "flows.json")
+    copyIfMissing(path.join(__dirname, "flows.json"), target)
+    copyIfMissing(path.join(__dirname, "flows_cred.json"), path.join(dataDir, "flows_cred.json"))
+    return target
+}
 
 // Liveness endpoint used by railway.toml (healthcheckPath = "/healthz")
 function healthzMiddleware(req, res, next) {
@@ -62,7 +112,7 @@ module.exports = {
      ******************************************************************************/
 
     /** The file containing the flows. If not set, defaults to flows_<hostname>.json **/
-    flowFile: 'flows.json',
+    flowFile: resolveFlowFile(),
 
     /** By default, credentials are encrypted in storage using a generated key. To
      * specify your own secret, set the following property.
