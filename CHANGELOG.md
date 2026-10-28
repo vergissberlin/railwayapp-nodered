@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.7](https://github.com/vergissberlin/railwayapp-nodered/compare/railwayapp-nodered-v0.2.6...railwayapp-nodered-v0.2.7) (2026-10-28)
+
+
+### Bug Fixes
+
+* require Node.js 22.9+ for Node-RED 5 on Railpack ([#37](https://github.com/vergissberlin/railwayapp-nodered/issues/37)) ([226d319](https://github.com/vergissberlin/railwayapp-nodered/commit/226d31990a42db62d54c688ab263db8ee719bc65))
+
+
+### Documentation
+
+* fix Railway deploy button link and add template forum link ([#35](https://github.com/vergissberlin/railwayapp-nodered/issues/35)) ([7497b87](https://github.com/vergissberlin/railwayapp-nodered/commit/7497b87b805615ebed60888b06770f699ad04f1a))
+
 ## [0.2.6](https://github.com/vergissberlin/railwayapp-nodered/compare/railwayapp-nodered-v0.2.5...railwayapp-nodered-v0.2.6) (2026-10-04)
 
 
