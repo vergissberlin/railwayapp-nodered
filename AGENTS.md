@@ -7,14 +7,14 @@
 
 ## Tech-Stack
 - Runtime: Node.js
-- Kernpaket: `node-red` (~3.x.x)
-- Zusatzpakete: `node-red-dashboard`, `node-red-contrib-ngrok`, `when`
+- Kernpaket: `node-red` (5.x, benoetigt Node.js >= 22.9)
+- Zusatzpakete: `@flowfuse/node-red-dashboard`, `node-red-contrib-ngrok`, `when`
 - Konfiguration: `settings.js` (Node-RED Runtime-Konfig)
 
 ## Wichtige Dateien
 - `package.json`: Startskripte und Abhaengigkeiten
 - `settings.js`: Sicherheit, Ports, Pfade, Runtime-Optionen
-- `flows.json`: exportierte Node-RED-Flows
+- `flows.json`: Default-Flow; zur Laufzeit liegen Flows in `/data/flows.json` (siehe `resolveFlowFile()` in `settings.js`)
 - `README.md`: Deploy-Dokumentation fuer Railway
 
 ## Laufverhalten
