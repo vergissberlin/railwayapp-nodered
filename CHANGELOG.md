@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.9](https://github.com/vergissberlin/railwayapp-nodered/compare/railwayapp-nodered-v0.2.8...railwayapp-nodered-v0.2.9) (2026-10-28)
+
+
+### Features
+
+* pre-install @vergissberlin/node-red-contrib-mjml node ([#41](https://github.com/vergissberlin/railwayapp-nodered/issues/41)) ([2a248cf](https://github.com/vergissberlin/railwayapp-nodered/commit/2a248cf10170833da0ffe37358ea5276cb98acc2))
+
 ## [0.2.8](https://github.com/vergissberlin/railwayapp-nodered/compare/railwayapp-nodered-v0.2.7...railwayapp-nodered-v0.2.8) (2026-10-28)
 
 
