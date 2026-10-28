@@ -63,6 +63,10 @@ This keeps your flows and credentials persistent across redeployments.
 
 If you find a bug in the template for railway, you can [submit an issue](https://github.com/vergissberlin/railwayapp-nodered/issues/new) to the GitHub Repository. Even better you can submit a Pull Request with a fix.
 
+## 💬 Support
+
+Questions or feedback? Visit the [template forum on Railway Central Station](https://station.railway.com/templates/node-red-bd11790b).
+
 <!-- footer -->
 ---
 
