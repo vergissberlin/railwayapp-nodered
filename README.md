@@ -12,7 +12,20 @@ Deploy Node-RED on Railway with one click. Node-RED is a flow-based low-code pro
 * Node-RED accessible on HTTPS
 * Password Authentication (Set username & password in environment variables)
 * FlowFuse Dashboard via `@flowfuse/node-red-dashboard`
+* MJML email templating via `@vergissberlin/node-red-contrib-mjml` (pre-installed)
 * Railway config as code via `railway.toml`
+
+## 🧩 Pre-installed nodes
+
+These nodes ship with the template and are available in the palette right after the first deploy:
+
+| Node | Package | Purpose |
+| --- | --- | --- |
+| `mjml-parse` | [@vergissberlin/node-red-contrib-mjml](https://www.npmjs.com/package/@vergissberlin/node-red-contrib-mjml) ([GitHub](https://github.com/vergissberlin/node-red-contrib-mjml)) | Renders [MJML](https://mjml.io) templates (with Mustache placeholders) to responsive HTML emails, including an editor preview. |
+| Dashboard 2 (`ui-*`) | [@flowfuse/node-red-dashboard](https://www.npmjs.com/package/@flowfuse/node-red-dashboard) | Dashboards and UI widgets under `NODE_RED_DASHBOARD_URI`. |
+| `ngrok` | [node-red-contrib-ngrok](https://www.npmjs.com/package/node-red-contrib-ngrok) | ngrok tunnels from a flow. |
+
+Pre-installed nodes live in the app image (`/app/node_modules`) and are updated with the template. Nodes you install yourself via **Manage palette** go to the volume (`/data/node_modules`) and survive redeploys. If you install a different version of a pre-installed node there, your version takes precedence.
 
 ## 🏗️ Architecture
 
