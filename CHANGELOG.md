@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.10](https://github.com/vergissberlin/railwayapp-nodered/compare/railwayapp-nodered-v0.2.9...railwayapp-nodered-v0.2.10) (2026-11-07)
+
+
+### Chores
+
+* **deps:** update dependency @flowfuse/node-red-dashboard to v1.36.0 ([fb39963](https://github.com/vergissberlin/railwayapp-nodered/commit/fb39963160d0e9e03d75e418b5f84d3016bb39ac))
+
 ## [0.2.9](https://github.com/vergissberlin/railwayapp-nodered/compare/railwayapp-nodered-v0.2.8...railwayapp-nodered-v0.2.9) (2026-10-28)
 
 
